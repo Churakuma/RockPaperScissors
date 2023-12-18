@@ -115,6 +115,13 @@ function game() {
         console.log("Computer Score: " + computerScore)
     }
     while (counter < 5)
+
+    if (computerScore > playerScore) {
+        console.log("Computer is our Rock-Paper-Scissors Champion!")
+    }
+    else {
+        console.log("The Player is our Rock-Paper-Scissors Champion!")
+    }
 }
 
 game()
