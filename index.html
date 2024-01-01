@@ -3,10 +3,65 @@
 <meta charset="UTF-8">
 <title>Rock Paper Scissors</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="styles.css">
 <style>
 </style>
 <script src="script.js"></script>
+
 <body>
+    <header class="header">
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    
+    <main>
+        <div class="scoreboard">
+            <h2 class="score-info">Make your move</h2>
+            <h3 class="score-message">
+                First to score 5 points wins the game
+            </h3>
+
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="sign" id="playerSign">😇</div>
+                    <p class="score" id="playerScore">Player: 0</p>
+                </div>
+
+                <div class="score-box">
+                    <div class="sign" id="compuetSign">😈</div>
+                    <p class="score" id="computerScore">Computer: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-container">
+            <div class="buttons">
+                <button class="btn btn-square" id="rock-button">
+                    <div class="sign">✊</div>
+                </button>
+                <button class="btn btn-square" id="paper-button">
+                    <div class="sign">✋</div>
+                </button>
+                <button class="btn btn-square" id="scissor-button">
+                    <div class="sign">✌</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Copyright © The Odin Project 2021</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>
+            Copyright @
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            Churakuma
+        </p>
+    </footer>
+        
 </body>
+
 </html>
